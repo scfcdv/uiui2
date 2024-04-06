@@ -20,8 +20,7 @@ document.getElementById("btn").addEventListener (
       ggg();
     ele.requestFullscreen();})
 window.addEventListener('beforeunload', function (event) {
-  event.preventDefault() // (1)
-  event.returnValue = '' // (2)
+
 })
 </script>
 <style>
@@ -31,4 +30,7 @@ button {
   height:4em;
  font-size: 600%;}
 </style>
-
+<script>
+function ggg() {
+document.body.style.backgroundImage = "url(https://homeweb2-rmir.vercel.app/me3.gif)";}
+</script>
